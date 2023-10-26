@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+        /* width: 100%; */
+        height:100vh;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        background-color: palevioletred;
+        
+        }
+       .container{
+        /* width: 100%; */
+        height:340px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: center;
+        background-color: palevioletred;
+        
+       }
+        .big{
+            width: 100%;
+            height:200px;
+            display: flex;
+            justify-content: center;
+            align-items:end;
+            /* margin-bottom:50%; */
+            
+            /* position: relative;  */
+        }
+
+        .small{
+            /* position: absolute; */
+            border-radius: 10%;
+        }
+
+        .small:hover{
+            animation-play-state: paused;}
+
+        .small-1{
+            width:200px;
+            height:200px;
+            /* background-color: chartreuse; */
+            background-image: url(./picture/2.jpg);
+            position: relative;
+            /* left:calc(50% - 250px);
+            top:calc(50% - 100px); */
+            animation: move 5s infinite linear ;
+        }
+        .small-1:before{
+            content:"";
+            width:200px;
+            height:200px;
+            border-radius: 10%;
+            background-image: url(./picture/2.jpg);
+            position: absolute;
+            transform: rotate(30deg);
+            
+        }
+        .small-1:after{
+            content:"";
+            width:200px;
+            height:200px;
+            border-radius: 10%;
+            background-image: url(./picture/2.jpg);
+            position: absolute;
+            transform: rotate(60deg);
+            
+        }
+
+        .small-2{
+            width:100px;
+            height:100px;
+            background-image: url(./picture/3.jpg);
+            margin: 0 23px 0 44px;
+            /* margin-bottom:0px; */
+            /* left:calc(50% - 50px);
+            top:50%; */
+            animation: move 5s infinite linear ;
+            animation-direction: reverse;
+            position: relative;
+        }
+        .small-2:before{
+            content:"";
+            width:100px;
+            height:100px;
+            border-radius: 10%;
+            background-image: url(./picture/3.jpg);
+            position: absolute;
+            transform: rotate(30deg);
+            
+        }
+        .small-2:after{
+            content:"";
+            width:100px;
+            height:100px;
+            border-radius: 10%;
+            background-image: url(./picture/3.jpg);
+            position: absolute;
+            transform: rotate(60deg);
+            
+        }
+
+        .small-3{
+            width:50px;
+            height:50px;
+            background-image: url(./picture/4.jpg);
+            /* margin-bottom:0px; */
+            /* margin-top: 100px; */
+            /* left:calc(50% + 50px);
+            top:calc(50% + 50px); */
+            animation: move 5s infinite linear ;
+            position: relative;
+        }
+        .small-3:before{
+            content:"";
+            width:50px;
+            height:50px;
+            border-radius: 10%;
+            background-image: url(./picture/4.jpg);
+            position: absolute;
+            transform: rotate(30deg);
+            
+        }
+        .small-3:after{
+            content:"";
+            width:50px;
+            height:50px;
+            border-radius: 10%;
+            background-image: url(./picture/4.jpg);
+            position: absolute;
+            transform: rotate(60deg);
+            
+        }
+
+        @keyframes move{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+   
+        .loading{
+        height: 140px;
+        background-color: palevioletred;
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+    }
+        .loading div{
+            width: 50px;
+            height: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(0, 0, 0);
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            /* animation: loading 2s infinite alternate linear; */
+        }
+        #L{animation: loading 2s infinite  alternate linear}
+        #o{animation: loading 2s infinite  0.4s alternate linear}
+        #a{animation: loading 2s infinite 0.8s alternate linear}
+        #d{animation: loading 2s infinite 1.2s alternate linear}
+        #i{animation: loading 2s infinite 1.4s alternate linear}
+        #n{animation: loading 2s infinite 1.8s alternate linear}
+        #g{animation: loading 2s infinite 2s alternate linear}
+        #dot-1{animation: loading 2s infinite 2.4s alternate linear}
+        #dot-2{animation: loading 2s infinite 2.6s alternate linear}
+        #dot-3{animation: loading 2s infinite 3s alternate linear}
+
+
+        #dot-3{animation ;}
+
+
+
+
+
+    @keyframes loading{
+        0%{
+            transform: translateY(0px);
+        }
+        100%
+        {
+            transform: translateY(50px);
+        }
+    }
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="big">
+                        <div class="small small-1"></div>
+                        <div class="small small-2"></div>
+                        <div class="small small-3"></div>
+                        
+            </div>
+            <div class="loading">
+                <div id="L">L</div>
+                <div id="o">o</div>
+                <div id="a">a</div>
+                <div id="d">d</div>
+                <div id="i">i</div>
+                <div id="n">n</div>
+                <div id="g">g</div>
+                <div id="dot-1">.</div>
+                <div id="dot-2">.</div>
+                <div id="dot-3">.</div>
+            </div>
+        
+        </div>
+    </div>
+
+</body>
+</html>

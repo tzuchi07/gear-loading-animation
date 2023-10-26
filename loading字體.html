@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .loading{
+        height: 140px;
+        background-color: black;
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+    }
+    .loading div{
+        width: 30px;
+        height: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: azure;
+        font-size: 30px;
+        text-align: center;
+        /* animation: loading 2s infinite alternate linear; */
+    }
+    #L{animation: loading 1s infinite  alternate linear}
+    #o{animation: loading 1s infinite  0.5s alternate linear}
+    #a{animation: loading 1s infinite 1s alternate linear}
+    #d{animation: loading 1s infinite 1.5s alternate linear}
+    #i{animation: loading 1s infinite 2s alternate linear}
+    #n{animation: loading 1s infinite 2.5s alternate linear}
+    #g{animation: loading 1s infinite 3s alternate linear}
+    #dot-1{animation: loading 1s infinite 3.5s alternate linear}
+    #dot-2{animation: loading 1s infinite 4s alternate linear}
+    #dot-3{animation: loading 1s infinite 4.5s alternate linear}
+
+
+    #dot-3{animation ;}
+
+
+
+
+
+    @keyframes loading{
+        0%{
+            transform: translateY(0px);
+        }
+        100%
+        {
+            transform: translateY(20px);
+        }
+    }
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="loading">
+        <div id="L">L</div>
+        <div id="o">o</div>
+        <div id="a">a</div>
+        <div id="d">d</div>
+        <div id="i">i</div>
+        <div id="n">n</div>
+        <div id="g">g</div>
+        <div id="dot-1">.</div>
+        <div id="dot-2">.</div>
+        <div id="dot-3">.</div>
+    </div>
+
+
+
+</body>
+</html>
